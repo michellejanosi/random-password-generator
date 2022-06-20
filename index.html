@@ -23,5 +23,19 @@
         </div>
     </div>
     <script src="index.js"></script>
+    <!-- Tippy.js tooltip -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+    <script>
+      tippy('#password-one', {
+        content: 'Click to copy!',
+        theme: 'app-green',
+      });
+
+      tippy('#password-two', {
+        content: 'Click to copy!',
+        theme: 'app-green',
+      });
+    </script>
 </body>
 </html>

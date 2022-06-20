@@ -87,3 +87,22 @@ hr {
 #password-two {
   margin-left: 12px;
 }
+
+/* Tippy tooltip styling */
+.tippy-box[data-theme~='app-green'] {
+  background-color: #10B981;
+  color: #FFF;
+}
+
+.tippy-box[data-theme~='app-green'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #10B981;
+}
+.tippy-box[data-theme~='app-green'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #10B981;
+}
+.tippy-box[data-theme~='app-green'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: #10B981;
+}
+.tippy-box[data-theme~='app-green'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: #10B981;
+}
