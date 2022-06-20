@@ -19,3 +19,31 @@ generateBtn.addEventListener('click', function() {
   passwordOne.textContent = getRandomChar(15);
   passwordTwo.textContent = getRandomChar(15);
 });
+
+// copy password on click
+// hat tip 🎩 to https://inspiredwebdev.com/copy-to-clipboard-with-javascript/
+passwordOne.addEventListener('click', function() {
+  const str = passwordOne.innerText;
+  const el = document.createElement('textarea');
+  el.value = str;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+});
+
+passwordTwo.addEventListener("click", function () {
+  const str = passwordTwo.innerText;
+  const el = document.createElement("textarea");
+  el.value = str;
+  el.setAttribute("readonly", "");
+  el.style.position = "absolute";
+  el.style.left = "-9999px";
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand("copy");
+  document.body.removeChild(el);
+});
