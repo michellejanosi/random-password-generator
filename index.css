@@ -106,3 +106,10 @@ hr {
 .tippy-box[data-theme~='app-green'][data-placement^='right'] > .tippy-arrow::before {
   border-right-color: #10B981;
 }
+
+@media only screen and (min-width: 460px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
